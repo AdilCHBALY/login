@@ -1,0 +1,13 @@
+@import './Variables.scss';
+@import './login.scss';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Kanit', sans-serif;
+    background-color: $bg_color;
+}

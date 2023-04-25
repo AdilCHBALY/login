@@ -1,0 +1,122 @@
+.login{
+    background-color: $main_color;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    &__content{
+        background-color: #101820FF;
+        display: flex;
+        width: 50%;
+        border-radius: 10px;
+        min-height: 500px;
+        overflow: hidden;
+
+        .left{
+            flex: 1;
+            background: linear-gradient(rgba(242, 170, 76, 0.5),rgba(16, 24, 32, 0.5)),url('../img/ppl2.png');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            color: white;
+
+
+            h1{
+                font-size: 100px;
+            }
+            span{
+                font-size: 18px;
+                font-weight: 400;
+            }
+            p{
+                font-size: 16px;
+            }
+
+            button{
+                width: 50%;
+                margin: 0 auto;
+                padding: 10px;
+                border: 1px solid transparent;
+                cursor: pointer;	
+                //border-radius: 10px;
+                transition: all 0.22s ease-in-out;
+                color: $main_color;
+                background-color: white;
+                
+                &:hover{
+                    background-color: transparent;
+                    border: 1px solid $main_color;
+                    color: white;
+                }
+            }
+        }
+
+        .right{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 50px;
+            padding: 50px;
+            h1{
+                color: #ccc;
+            }
+
+            form{
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+    
+                input{
+                    border: none;
+                    border-bottom: 1px solid $main_color;
+                    background-color: #101820FF;
+                    padding: 20px 10px;
+                    color: white;
+                    &::placeholder{
+                        color: white;
+                        font-size: 12px;
+                    }
+                }
+
+                .profils{
+                    color: white;
+                    font-size: 12px;
+
+                    .inputs{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+    
+                button{
+                    width: 50%;
+                    margin: 0 auto;
+                    padding: 10px;
+                    border: 1px solid transparent;
+                    cursor: pointer;	
+                    //border-radius: 10px;
+                    transition: all 0.22s ease-in-out;
+                    color: white;
+                    background-color: $main_color;
+
+                    &:hover{
+                        background-color: transparent;
+                        border: 1px solid $main_color;
+                        color: $main_color;
+                    }
+                }
+            }
+
+            
+        }
+    }
+    
+}
